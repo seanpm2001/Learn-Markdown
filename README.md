@@ -1,406 +1,334 @@
 
 ***
 
-# <projectName>
+![/MD.png](/MD.png)
 
-![{Project icon} This image failed to load. It may be due to the file not being reached, or a general error. Reload the page to fix a possible general error.](Image.svg)
+### Learning Markdown
 
-# By:
+I am pretty experienced with markdown at the moment, but I still have more to learn. This document will go over my current knowledge of the markdown markup language.
 
-<!-- ![{Developer name} This image failed to load. It may be due to the file not being reached, or a general error. Reload the page to fix a possible general error.](Image2.svg) !-->
+This document uses version 0.30 of the CommonMark markup specification for the markdown markup language.
 
-## [Seanpm2001](https://github.com/seanpm2001/), [<developerName>](https://github.com/<developerName>/) Et; Al.
+#### Comments in Markdown
 
+Comments in Markdown are the same as most other markup languages (such as XML, HTML, etc.) they are written like this:
 
-### Top
+```markdown
+<!-- This is a comment !-->
+<!-- The same syntax for single-line
+comments is also used in block comments.
+!-->
+```
 
-# `README.md`
+#### Break keyword in Markdown
+
+Markdown does not support the break statement/keyword, it has no need for it.
+
+To this day, I am still not entirely sure what the `break` keyword does, but most languages support it.
+
+#### Headings in Markdown
+
+Headings in Markdown work like so:
+
+# Heading 1
+
+```markdown
+# Heading 1
+```
+
+## Heading 2
+
+```markdown
+## Heading 2
+```
+
+### Heading 3
+
+```markdown
+### Heading 3
+```
+
+#### Heading 4
+
+```markdown
+#### Heading 4
+```
+
+##### Heading 5
+
+```markdown
+##### Heading 5
+```
+
+###### Heading 6
+
+```markdown
+###### Heading 6
+```
+
+Just like HTML and other document standards, a 7th heading level does not exist. Attempting to do so will result in plain unformatted text, rather than a heading
+
+####### Heading 7 (non-existant)
+
+```markdown
+####### Heading 7 (non-existant)
+```
+
+#### Lists in Markdown
+
+Lists can be formed in Markdown in multiple ways. The following examples showcase bullet lists, and numbered lists.
+
+##### Bullet list
+
+```markdown
+* Bullet list entry 1
+
+* Bullet list entry 2
+```
+
+Originally, I learned that every line has to have a space between it and the previous line, due to bugs with markdown at the time on GitHub. It still applies in some areas, but not here:
+
+```markdown
+* Condensed bullet list entry 1
+* Entry 2
+```
+
+##### Numbered list
+
+```markdown
+1. Start of list
+2. GitHub
+3. Python
+4. CommonMark
+5. CMark
+6. Java
+7. HTML5
+8. GitHub
+9. XML
+10. End of list
+```
+
+Additionally, you can combine bullets and numbers to form roman numeral lists:
+
+```markdown
+* 1. Roman 1 (I)
+* 2. Roman 2 (II)
+* 3. Roman 3 (III)
+* 4. Roman 4 (IV)
+* 5. Roman 5 (V)
+* 6. Roman 6 (VI)
+* 7. Roman 7 (VII)
+* 8. Roman 8 (VIII)
+* 9. Roman 9 (IX]
+* 10. Roman 10 (X)
+```
+
+#### Quote blocks in markdown
+
+Quote blocks/indented blocks can be made in markdown like so:
+
+```markdown
+> "Imagination is more important than knowledge" - Albert Einstein
+
+> > It doesn't have to be a quote
+
+> > > Layer 3
+
+> > > > Layer 4
+
+> > > > > Layer 5
+
+> > > > > > Layer 6
+
+> > > > > > > This type of formatting isn't limited to 6 levels
+
+> > > > > > > > Layer 8
+
+> > > > > > > > > Layer 9
+
+> > > > > > > > > > Layer 10 (I will stop here)
+```
+
+#### Bold in Markdown
+
+Text can be bolded in Markdown by doing the following:
+
+```markdown
+This text is not bold
+
+**This text is bold**
+
+<b>This text is also bold</b>
+
+<em>Additionally, this text is also bold</em>
+```
+
+#### Italics in Markdown
+
+Text can be italicized in Markdown by doing the following:
+
+```markdown
+This text is not italicized
+
+*This text is italicized*
+
+_This text is also italicized_
+
+<i>Additionally, this text is also italicized</i>
+```
+
+#### Code blocks in Markdown
+
+A code block can be formed in Markdown by doing the following:
+
+````markdown
+
+```markdown
+To add a markdown codeblock inside a markdown codeblock, use an extra apostrophe on the first codeblock.
+```
+
+```
+This codeblock has no language definition, so it is plain text
+```
+
+```python
+print("Hello, Markdown")
+```
+
+```javascript
+console.log("Hello, Markdown");
+```
+
+There are too many to list, so I will stop here for now.
+
+````
+
+##### Images in Markdown
+
+Referencing an image in Markdown is very easy, and is done like so:
+
+```markdown
+![Alt text](/MD.png)
+
+[This is a link. It is not to be confused with an image. Make sure not to forget the exclamation point!](/MD.png)
+```
+
+#### Horizontal Lines in Markdown
+
+Horizontal Lines/divider lines are supported in Markdown. They can be defined like so:
+
+```markdown
 
 ***
 
-## Read this article in a different language
+Section 1
 
-**Sorted by:** `A-Z`
+---
 
-[Sorting options unavailable](https://github.com/<developerName>/<repoName>)
-
-( [af Afrikaans](/.github/README_AF.md) Afrikaans | [sq Shqiptare](/.github/README_SQ.md) Albanian | [am አማርኛ](/.github/README_AM.md) Amharic | [ar عربى](/.github/README_AR.md) Arabic | [hy հայերեն](/.github/README_HY.md) Armenian | [az Azərbaycan dili](/.github/README_AZ.md) Azerbaijani | [eu Euskara](/.github/README_EU.md) Basque | [be Беларуская](/.github/README_BE.md) Belarusian | [bn বাংলা](/.github/README_BN.md) Bengali | [bs Bosanski](/.github/README_BS.md) Bosnian | [bg български](/.github/README_BG.md) Bulgarian | [ca Català](/.github/README_CA.md) Catalan | [ceb Sugbuanon](/.github/README_CEB.md) Cebuano | [ny Chichewa](/.github/README_NY.md) Chichewa | [zh-CN 简体中文](/.github/README_ZH-CN.md) Chinese (Simplified) | [zh-t 中國傳統的）](/.github/README_ZH-T.md) Chinese (Traditional) | [co Corsu](/.github/README_CO.md) Corsican | [hr Hrvatski](/.github/README_HR.md) Croatian | [cs čeština](/.github/README_CS.md) Czech | [da dansk](README_DA.md) Danish | [nl Nederlands](/.github/README_NL.md) Dutch | [**en-us English**](/.github/README.md) English |  [EO Esperanto](/.github/README_EO.md) Esperanto | [et Eestlane](/.github/README_ET.md) Estonian | [tl Pilipino](/.github/README_TL.md) Filipino | [fi Suomalainen](/.github/README_FI.md) Finnish |  [fr français](/.github/README_FR.md) French | [fy Frysk](/.github/README_FY.md) Frisian | [gl Galego](/.github/README_GL.md) Galician | [ka ქართველი](/.github/README_KA) Georgian | [de Deutsch](/.github/README_DE.md) German | [el Ελληνικά](/.github/README_EL.md) Greek | [gu ગુજરાતી](/.github/README_GU.md) Gujarati | [ht Kreyòl ayisyen](/.github/README_HT.md) Haitian Creole | [ha Hausa](/.github/README_HA.md) Hausa | [haw Ōlelo Hawaiʻi](/.github/README_HAW.md) Hawaiian | [he עִברִית](/.github/README_HE.md) Hebrew | [hi हिन्दी](/.github/README_HI.md) Hindi | [hmn Hmong](/.github/README_HMN.md) Hmong | [hu Magyar](/.github/README_HU.md) Hungarian | [is Íslenska](/.github/README_IS.md) Icelandic | [ig Igbo](/.github/README_IG.md) Igbo | [id bahasa Indonesia](/.github/README_ID.md) Icelandic | [ga Gaeilge](/.github/README_GA.md) Irish | [it Italiana/Italiano](/.github/README_IT.md) | [ja 日本語](/.github/README_JA.md) Japanese | [jw Wong jawa](/.github/README_JW.md) Javanese | [kn ಕನ್ನಡ](/.github/README_KN.md) Kannada | [kk Қазақ](/.github/README_KK.md) Kazakh | [km ខ្មែរ](/.github/README_KM.md) Khmer | [rw Kinyarwanda](/.github/README_RW.md) Kinyarwanda | [ko-south 韓國語](/.github/README_KO_SOUTH.md) Korean (South) | [ko-north 문화어](README_KO_NORTH.md) Korean (North) (NOT YET TRANSLATED) | [ku Kurdî](/.github/README_KU.md) Kurdish (Kurmanji) | [ky Кыргызча](/.github/README_KY.md) Kyrgyz | [lo ລາວ](/.github/README_LO.md) Lao | [la Latine](/.github/README_LA.md) Latin | [lt Lietuvis](/.github/README_LT.md) Lithuanian | [lb Lëtzebuergesch](/.github/README_LB.md) Luxembourgish | [mk Македонски](/.github/README_MK.md) Macedonian | [mg Malagasy](/.github/README_MG.md) Malagasy | [ms Bahasa Melayu](/.github/README_MS.md) Malay | [ml മലയാളം](/.github/README_ML.md) Malayalam | [mt Malti](/.github/README_MT.md) Maltese | [mi Maori](/.github/README_MI.md) Maori | [mr मराठी](/.github/README_MR.md) Marathi | [mn Монгол](/.github/README_MN.md) Mongolian | [my မြန်မာ](/.github/README_MY.md) Myanmar (Burmese) | [ne नेपाली](/.github/README_NE.md) Nepali | [no norsk](/.github/README_NO.md) Norwegian | [or ଓଡିଆ (ଓଡିଆ)](/.github/README_OR.md) Odia (Oriya) | [ps پښتو](/.github/README_PS.md) Pashto | [fa فارسی](/.github/README_FA.md) |Persian  [pl polski](/.github/README_PL.md) Polish | [pt português](/.github/README_PT.md) Portuguese | [pa ਪੰਜਾਬੀ](/.github/README_PA.md) Punjabi | No languages available that start with the letter Q | [ro Română](/.github/README_RO.md) Romanian | [ru русский](/.github/README_RU.md) Russian | [sm Faasamoa](/.github/README_SM.md) Samoan | [gd Gàidhlig na h-Alba](/.github/README_GD.md) Scots Gaelic | [sr Српски](/.github/README_SR.md) Serbian | [st Sesotho](/.github/README_ST.md) Sesotho | [sn Shona](/.github/README_SN.md) Shona | [sd سنڌي](/.github/README_SD.md) Sindhi | [si සිංහල](/.github/README_SI.md) Sinhala | [sk Slovák](/.github/README_SK.md) Slovak | [sl Slovenščina](/.github/README_SL.md) Slovenian | [so Soomaali](/.github/README_SO.md) Somali | [[es en español](/.github/README_ES.md) Spanish | [su Sundanis](/.github/README_SU.md) Sundanese | [sw Kiswahili](/.github/README_SW.md) Swahili | [sv Svenska](/.github/README_SV.md) Swedish | [tg Тоҷикӣ](/.github/README_TG.md) Tajik | [ta தமிழ்](/.github/README_TA.md) Tamil | [tt Татар](/.github/README_TT.md) Tatar | [te తెలుగు](/.github/README_TE.md) Telugu | [th ไทย](/.github/README_TH.md) Thai | [tr Türk](/.github/README_TR.md) Turkish | [tk Türkmenler](/.github/README_TK.md) Turkmen | [uk Український](/.github/README_UK.md) Ukrainian | [ur اردو](/.github/README_UR.md) Urdu | [ug ئۇيغۇر](/.github/README_UG.md) Uyghur | [uz O'zbek](/.github/README_UZ.md) Uzbek | [vi Tiếng Việt](/.github/README_VI.md) Vietnamese | [cy Cymraeg](/.github/README_CY.md) Welsh | [xh isiXhosa](/.github/README_XH.md) Xhosa | [yi יידיש](/.github/README_YI.md) Yiddish | [yo Yoruba](/.github/README_YO.md) Yoruba | [zu Zulu](/.github/README_ZU.md) Zulu ) Available in 110 languages (108 when not counting English and North Korean, as North Korean has not been translated yet [Read about it here](/OldVersions/Korean(North)/README.md))
-
-Translations in languages other than English are machine translated and are not yet accurate. No errors have been fixed yet as of March 21st 2021. Please report translation errors [here](https://github.com/<developerName>/<repoName>/issues/). Make sure to backup your correction with sources and guide me, as I don't know languages other than English well (I plan on getting a translator eventually) please cite [wiktionary](https://en.wiktionary.org) and other sources in your report. Failing to do so will result in a rejection of the correction being published.
-
-Note: due to limitations with GitHub's interpretation of markdown (and pretty much every other web-based interpretation of markdown) clicking these links will redirect you to a separate file on a separate page that isn't the intended page. You will be redirected to the [.github folder](/.github/) of this project, where the README translations are hosted.
-
-Translations are currently done with Bing translate and DeepL. Support for Google Translate translations is coming to a close due to privacy concerns.
+Section 2
 
 ***
 
-# Index
+```
 
-[00.0 - Top](#Top)
+#### Hyperlinks in Markdown
 
-> [00.1 - Title](#<projectName>)
+Hyperlinks are supported in Markdown. They can be defined like so:
 
-> [00.2 - Read this article in a different language](#Read-this-article-in-a-different-language)
+```markdown
+[GitHub](https://github.com/)
+```
 
-> [00.3 - Index](#Index)
+#### Dropdowns in Markdown
 
-[01.0 - Description](#RepositoryName)
+Since Markdown can embed HTML5, most HTML features are readily available. Here is how you make a dropdown in markdown:
 
-[02.0 - About](#About)
+```markdown
+<details><summary>Click/tap here to expand/collapse this section</summary>
 
-[03.0 - Wiki](#Wiki)
+Lorem Ipsum
 
-[04.0 - History](#History)
+</details>
+```
 
-> [04.1 - Pre-history](#Pre-history)
+Here is how you make a dropdown that is open by default:
 
-> [04.2 - Alpha History](#Alpha-history)
+```markdown
+<details open><summary><p lang="en">Click/tap here to expand/collapse this section</p></summary>
 
-> [04.3 - Beta History](#Beta-history)
+Lorem Ipsum
 
-> [04.4 - Modern History](#Modern-history)
+</details>
+```
 
-[05.0 - Copying](#Copying)
+#### Tables in Markdown
 
-[06.0 - Credits](#Credits)
+Tables can be defined like so in Markdown:
 
-[07.0 - Installation](#Installation)
+##### 2 column table
 
-[08.0 - Version history](#Version-history)
+This is a 2 column table:
 
-[09.0 - Version history](#Version-history)
+```markdown
+| Column 1 | Column 2 |
+|---|---|
+| Row 1 | Lorem |
+| Row 2 | Ipsum |
+```
 
-[10.0 - Software status](#Software-status)
+##### 3 column table
 
-[11.0 - Sponsor info](#Sponsor-info)
+This is a 3 column table:
 
-[12.0 - Contributers](#Contributers)
+```markdown
+| Column 1 | Column 2 | Column 3 |
+|---|---|---|
+| Row 1 | Lorem | Ipsum |
+| Row 2 | Lorem | Ipsum |
+```
 
-[13.0 - Issues](#Issues)
+You must fill every entry in the table, or it won't render.
 
-> [13.1 - Current issues](#Current-issues)
+#### Videos in Markdown
 
-> [13.2 - Past issues](#Past-issues)
+I don't know how to embed videos in markdown yet, as I never tried.
 
-> [13.3 - Past pull requests](#Past-pull-requests)
+#### Audio in Markdown
 
-> [13.4 - Active pull requests](#Active-pull-requests)
+I don't know how to embed audio files/clips in markdown yet, as I never tried.
 
-[14.0 - Resources](#Resources)
+#### Source
 
-[15.0 - Contributing](#Contributing)
+The majority of my Markdown knowledge comes from experimenting, viewing other peoples markdown, and reading commonmark documentation on the commonmark specification page and Wikipedia.
 
-[16.0 - About README](#About-README)
+This is a pretty ambitious task, and I am hoping I didn't forget anything.
 
-[17.0 - README Version history](#README-version-history)
+#### Other knowledge of Markdown
 
-[18.0 - Footer](#You-have-reached-the-end-of-the-README-file)
+1. Markdown is not a curly bracket language, and also does not use semicolons at the end of each line
 
-> [18.9 - End of file](#EOF)
+2. Markdown is a lighweight markup language
 
-***
+3. Markdown is most widely used for documentation.
 
-# <repoName>
-<repo_description>
+4. Markdown uses 4 different file extensions: `*.md` `*.mkd` `*.mdown` and `*.markdown`
 
-***
+5. Markdown is a language recognized by GitHub, but you have to use a `.gitattributes` file to recognize it in the GitHub Linguist
 
-## About
+6. Markdown is a markup language
 
-See above. <extendedRepoDescription>
+7. Markdown can be shortened to either MDown or MD
 
-***
+8. Before I started using GitHub and came across markdown files, I was very confused by them, as I didn't know how to open them, or view them. Less than a year later, I joined GitHub, and started using them excessively.
 
-## Wiki
+9. I was unsure if it was possible to write a documetn about learning markdown in markdown, as I didn't know how to encapsulate a code block inside a code block. Turns out all you need is to have 4 apostrophes in the main block, instead of 3.
 
-[Click/tap here to view this projects Wiki](https://github.com/<developerName>/<repoName>/wiki)
+10. I may not have listed everything I know here. I feel like I am missing something, but I currently can't determine what it is.
 
-If the project has been forked, the Wiki was likely removed. Luckily, I include an embedded version. You can view it [here](/External/ProjectWiki/).
-
-***
-
-## History
-
-Write about this projects history here.
-
-### Pre-history
-
-No pre-history to show for this project.
-
-### Alpha history
-
-No Alpha history to show for this project.
-
-### Beta history
-
-No Beta history to show for this project.
-
-### Modern history
-
-No Modern history to show for this project.
+11. No other knowledge of Markdown at the moment.
 
 ***
 
-## Copying
-
-View the copying license for this project [here](/COPYING) (if you haven't built the project yet with the makefile, here is the original link: [COPYINGL](/COPYINGL)
-
-Please note that you also have to follow the rules of the GNU General Public License v3 (GPL3) which you can view [here](/LICENSE.txt)
-
-***
-
-## Credits
-
-View the credits file for this project and see the people who got together to make this project by [clicking/tapping here](/CREDITS)
-
-***
-
-## Installation
-
-View the installation instructions file for this project [here](/INSTALL)
-
-Requirements: Read the instructions for more info, and get the latest up-to-date instructions [here](https://gist.github.com/seanpm2001/745564a46186888e829fdeb9cda584de)
-
-***
-
-## Sponsor info
-
-![SponsorButton.png](/SponsorButton.png)
-
-You can sponsor this project if you like, but please specify what you want to donate to. [See the funds you can donate to here](https://github.com/seanpm2001/Sponsor-info/tree/main/For-sponsors/)
-
-You can view other sponsor info [here](https://github.com/seanpm2001/Sponsor-info/)
-
-Try it out! The sponsor button is right up next to the watch/unwatch button.
-
-***
-
-## Version history
-
-**Version history currently unavailable**
-
-**No other versions listed**
-
-***
-
-## Software status
-
-All of my works are free some restrictions. DRM (**D**igital **R**estrictions **M**anagement) is not present in any of my works.
-
-![DRM-free_label.en.svg](/DRM-free_label.en.svg)
-
-This sticker is supported by the Free Software Foundation. I never intend to include DRM in my works.
-
-I am using the abbreviation "Digital Restrictions Management" instead of the more known "Digital Rights Management" as the common way of addressing it is false, there are no rights with DRM. The spelling "Digital Restrictions Management" is more accurate, and is supported by [Richard M. Stallman (RMS)](https://en.wikipedia.org/wiki/Richard_Stallman) and the [Free Software Foundation (FSF)](https://en.wikipedia.org/wiki/Free_Software_Foundation)
-
-This section is used to raise awareness for the problems with DRM, and also to protest it. DRM is defective by design and is a major threat to all computer users and software freedom.
-
-Image credit: [defectivebydesign.org/drm-free/...](https://www.defectivebydesign.org/drm-free/how-to-use-label/)
-
-***
-
-## Contributers
-
-Currently, I am the only contributer. Contributing is allowed, as long as you follow the rules of the [CONTRIBUTING.md](/CONTRIBUTING.md) file.
-
-> * 1. [seanpm2001](https://github.com/seanpm2001/) - x commits (As of Yr, DoW, Month, DoM, at ##:## a/pm)
-
-> * 2. No other contributers.
-
-***
-
-## Issues
-
-### Current issues
-
-* None at the moment
-
-* No other current issues
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Past issues
-
-* None at the moment
-
-* No other past issues
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Past pull requests
-
-* None at the moment
-
-* No other past pull requests
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-### Active pull requests
-
-* None at the moment
-
-* No other active pull requests
-
-If the repository has been forked, issues likely have been removed. Luckily I keep an archive of certain images [here](/.github/Issues/)
-
-[Read the privacy policy on issue archival here](/.github/Issues/README.md)
-
-**TL;DR**
-
-I archive my own issues. Your issue won't be archived unless you request it to be archived.
-
-***
-
-## Resources
-
-Here are some other resources for this project:
-
-[Project language file A](PROJECT_LANG_1.<fileExtensionForProgrammingLanguage>)
-
-[Join the discussion on GitHub](https://github.com/<developerName>/<repoName>/discussions)
-
-No other resources at the moment.
-
-***
-
-## Contributing
-
-Contributing is allowed for this project, as long as you follow the rules of the `CONTRIBUTING.md` file.
-
-[Click/tap here to view the contributing rules for this project](/CONTRIBUTING.md)
-
-***
-
-## About README
-
-**File type:** `Markdown Document (*.md *.mkd *.markdown)`
-
-**File version:** `0.1.6 (Monday, August 23rd 2021 at 6:37 pm)`
-
-**Line count (including blank lines and compiler line):** `0,407`
-
-***
-
-## README version history
-
-Version 0.1 (Sunday, March 21st 2021 at 7:50 pm)
-
-> Changes:
-
-> * Started the file
-
-> * Added the title section
-
-> * Added the index
-
-> * Added the about section
-
-> * Added the Wiki section
-
-> * Added the version history section
-
-> * Added the issues section.
-
-> * Added the past issues section
-
-> * Added the past pull requests section
-
-> * Added the active pull requests section
-
-> * Added the contributors section
-
-> * Added the contributing section
-
-> * Added the about README section
-
-> * Added the README version history section
-
-> * Added the resources section
-
-> * Added a software status section, with a DRM free sticker and message
-
-> * Added the sponsor info section
-
-**ITERATION 5**
-
-> * Updated the title section
-
-> * Updated the index
-
-> * Added the history section
-
-> * Updated the file info section
-
-> * Updated the file history section
-
-**ITERATION 6**
-
-> * Updated the title section
-
-> * Fixed and update template links
-
-> * Updated the index
-
-> * Added the copying section
-
-> * Added the credits section
-
-> * Added the installation section
-
-> * Updated the resources section
-
-> * Updated the contributors section
-
-> * Added the technical notes section
-
-> * Updated the footer
-
-> * Updated the file info section
-
-> * Updated the file history section
-
-> * No other changes in version 0.1
-
-Version 1 (Coming soon)
-
-> Changes:
-
-> * Coming soon
-
-> * No other changes in version 1
-
-Version 2 (Coming soon)
-
-> Changes:
-
-> * Coming soon
-
-> * No other changes in version 2
-
-***
-
-### You have reached the end of the README file
-
-( [Back to top](#Top) | [Exit to GitHub](https://github.com) | [Exit to Bing](https://www.bing.com/) | [Exit to DuckDuckGo](https://duckduckgo.com/) | [Exit to Ecosia](https://www.ecosia.org) )
-
-### EOF
+**File version:** `1 (2022, Monday, April 18th at 12:31 am PST)` - Prepared 1 day early.
 
 ***
